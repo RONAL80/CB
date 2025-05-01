@@ -9,10 +9,7 @@ import json
 import re
 
 # --- Konfigurasi ---
-GOOGLE_API_KEY = "AIzaSyBDP8S_UKUwLrUoZyWbfeqU1mX8Ams-ZZ0"  # Ganti dengan kunci API Anda
-ELEVENLABS_API_KEY = "sk_1a88d281fe94c7b953637c292ea50bb2a6bdd6a111e9695e"  # Kunci API ElevenLabs Anda
-ELEVENLABS_VOICE_ID = "RWiGLY9uXI70QL540WNd"  # Contoh ID suara - ganti sesuai keinginan
-ELEVENLABS_MODEL_ID = "eleven_multilingual_v2"
+
 genai.configure(api_key=GOOGLE_API_KEY)
 model = genai.GenerativeModel('gemini-2.0-flash')  # Coba model ini
 OUTPUT_FILENAME = "gemini_video.mp4"
